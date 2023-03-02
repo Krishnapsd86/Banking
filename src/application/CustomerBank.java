@@ -6,8 +6,13 @@ public class CustomerBank {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Account chinmay = new Account("Chinmay Deshpande",01001);
+		/*Account chinmay = new Account("Chinmay Deshpande",01001);
 		chinmay.menu();
+		Account Krishna = new Account("Krishna Thapaliya",01002);
+		Krishna.menu();*/
+		Account akash = new Account("Akash Thapa",010);
+		akash.menu();
+		
 
 	}
 
@@ -21,9 +26,9 @@ class Account {
 	int customerId;
 
 	// class constructor
-	Account(String name, int cId) {
+	Account(String name, int CustomerId) {
 		this.customerName = name;
-		this.customerId = cId;
+		this.customerId = CustomerId;
 	}
 
 	// Method for Deposit
@@ -58,7 +63,7 @@ class Account {
 		double interestRate = 0.05;
 		double newBalance = (balance * interestRate * yrs) + balance;
 		System.out.println("Current interest rate: " + (100 * interestRate));
-		System.out.println("Afher " + yrs + " years, balance will be: " + newBalance);
+		System.out.println("After " + yrs + " years, balance will be: " + newBalance);
 	}
 
 	// Method for main menu
